@@ -1,0 +1,21 @@
+1. they want a nice little front end where they can pull from that database and have certain fields for each one that they gave me
+
+They also want an easy way of creating a new doggie
+Thats on their end
+
+
+2.They don’t want a client end, but they do want an end for the walkers.
+
+
+3. Every walker is assigned certain doggies, and when he is done walking his dogs for the day, he goes into the website on his phone and checks off which dogs he walked that day
+
+4. In that system, it knows how much that particular walker is going to get paid for the walk, there are different pay models for different dog situations, different level of experience walkers
+that needs to be implemented as well
+
+5. It needs to tally up what the walker is getting paid for the week and give the business that number
+
+6. Then, they need a system for their billing
+They bill the 1st-30th, they want something that can add up all the doggies walked for a certain client, so each dog will “belong” to a client, and he will be given the total for the month
+
+
+7. The most kind of annoying part of this is that they have 12-14 different price models depending on if the  dog is a rescue, or if they have a group of 2-3 dogs, or they are loyal customers, etc. but I don’t think that’s actually a big deal.

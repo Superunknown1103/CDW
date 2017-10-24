@@ -10,9 +10,9 @@ class Footer extends Component {
         return (
             <footer>
             <ul className="site-link">
-            <li>
                 Copyright: {this.state.year} Concept and Color
-                </li>
+                <br />
+                <span>React version: {React.version}</span>
                 </ul>
             </footer>
         );
