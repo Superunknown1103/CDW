@@ -1,7 +1,23 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 class Walkreport extends Component {
+    constructor() {
+        super();
+        this.state = {
+         dogsWalked: "no dogs listed",
+        };
+    }
+ 
     render() {
+
+        handleClick(e) => {
+            // var report = getElementById('input:checkbox:checked').map(function() {
+            //     return this.value;
+            // }).get(); 
+            this.setState({
+                dogsWalked: report,
+            });
+        }
         return (
             <div className="wrapper">
             <h2>Let's check off which dogs you walked today</h2>
@@ -18,7 +34,7 @@ class Walkreport extends Component {
         <input type="checkbox" id="dogcheck" className="dog" />
         <label htmlFor="Renny">Renny</label>
         <br />
-        <button type="submit">Submit</button>
+        <div>Dogs Walked: {this.state.dogsWalked} </div>
       </form>
       </div>
         );
