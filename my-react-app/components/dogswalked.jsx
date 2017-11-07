@@ -4,10 +4,19 @@ import Walkreport from './walkreport.jsx'
 export default class Dogswalked extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {dogsWalked: ""}
-        this.addDogs = this.updateDogs.bind(this, 1);
+        function getDogs(dogsWalked){
+            var inputs = document.getElementById("input");
+            for(var i = 0; i < inputs.length; i++) {
+                if(inputs[i].type == "checkbox") {
+                    inputs[i].checked = true;
+                }
+                return dogsWalked;
+                console.log(dogsWalked);
+        }
     }
-
+        this.state = {dogsWalked: ""}
+        this.addDogs = this.updateDogs.bind(this, dogsWalked);
+    }
 render() {
     return (
         <div>
@@ -33,19 +42,7 @@ render() {
             </div>
         );
     }
-    
     updateDogs(dogsWalked) {
-        function getDogs(){
-        var inputs = document.getElementById("input");
-        for(var i = 0; i < inputs.length; i++) {
-            if(inputs[i].type == "checkbox") {
-                inputs[i].checked = true;
-            }
-            return dogs;
-            console.log(dogs);
-    }
     this.setState({dogsWalked: this.state.dogsWalked + dogsWalked});
-    
-    }
     }
 }
